@@ -17,4 +17,14 @@ cl(f1)
 let xl = f1();
 cl(xl)
 
-let  
+
+function outeside(){
+    let y = 200;
+    return function outerfunction(){
+        return y
+    }
+}
+
+let f2 =outeside()
+let cdl = f2();
+cl(cdl)
